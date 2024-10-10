@@ -1,4 +1,4 @@
-@for (item of users() ; track $index) {
+@for (item of $items | async; track $index) {
 <br />
 <button
   id="dropdownDefaultButton"
