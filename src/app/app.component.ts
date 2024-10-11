@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     initFlowbite();
+    // This simulates the delay of an api that creates the list of items to be shown
+    // If the the value is greater than 0, the dropdowns would fail
     await this.loadPage(1000);
   }
 
